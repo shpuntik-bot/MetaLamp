@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Montserrat Regular';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-Regular.woff') format('woff'),
+	url('../fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+/*Montserrat Bold - Bold 700 */
+@font-face {
+	font-family: 'Montserrat Bold';
+	src: url('../fonts/Montserrat-ExtraBold.eot');
+	src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+	url('../fonts/../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+/*Quicksand - Regular 400 */
+@font-face {
+	font-family: 'Quicksand Regular';
+	src: url('../fonts/Quicksand-Regular.eot');
+	src: url('../fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Quicksand-Regular.woff') format('woff'),
+	url('../fonts/Quicksand-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}

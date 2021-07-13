@@ -1,0 +1,185 @@
+html {
+	box-sizing: border-box;
+}
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+body {
+	max-width: 1440px;
+	min-width: 320px;
+	font-family: Montserrat;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 28px;
+	background: #E5E5E5;
+}
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+h1 {
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #1F2041;
+}
+.logo {
+	width: 48px;
+	height: 48px;
+	background-image: url("../img/Group.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 30px;
+}
+.left-wrap, .centr-wrap, .left-wrap {
+	margin-top: 110px;
+}
+/*левый столбец*/
+.left-wrap {}
+.search, .registration {
+	width: 380px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	margin-top: 40px;
+	padding: 30px;
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.coming, .departure, .visitor {
+	width: 150px;
+	margin-top: 21px;
+	/*position: relative;*/
+}
+/*надписи над полями фильтра*/
+.coming-text, .departure-text, .visitor-text {
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #1F2041;
+	/*margin-top: 21px;*/
+}
+/**/
+.form-coming, .form-departure, .form-visitor {
+	display: block;
+	height: 44px;
+	background-color: #FFFFFF;
+	margin-top: 6px;
+	width: 150px;
+	position: relative;
+}
+.form-visitor {
+	width: 320px;
+}
+.form-coming_input, .form-departure_input, .form-visitor_input {
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	border-radius: 4px;
+	padding: 12px 32px 13px 15px;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(31, 32, 65, 0.75);
+	position: absolute;
+	/*z-index: 5;*/
+	width: 150px;
+}
+.form-visitor_input {
+	width: 320px;
+}
+.form-coming_button, .form-departure_button, .form-visitor_button {
+	width: 44px;
+	height: 43px;
+	background-color: #FFFFFF;
+	background-image: url("../img/expand_more.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 4px;
+	/*z-index: 10;*/
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	cursor: pointer;
+}
+.form-coming_button, .form-departure_button {
+
+}
+
+.form-visitor_button {
+
+}
+/*форма запроса на поиск по дате*/
+.search h1 {
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+
+}
+.search-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.search-form_visitor {
+	width: 320px;
+}
+.search-botton {
+	position: relative;
+}
+.search-botton_result {
+	margin-top: 31px;
+	padding: 14px 22px 15px 18px;
+	width: 320px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 14,63px;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 15px;
+	letter-spacing: 0em;
+	text-align: center;
+
+}
+.search-botton_result_icon {
+	margin-top: 31px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	position: absolute;
+	background-image: url("../img/arrow_forward.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	right: 0;
+	top: 0;
+}
+/*форма регистрации аккаунта*/
+.registration {
+
+}
+
+/*центральный столбец*/
+.centr-wrap {}
+
+/*правый столбец*/
+.left-wrap {}
