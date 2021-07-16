@@ -87,11 +87,14 @@ h1 {
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	border-radius: 4px;
 	padding: 12px 32px 13px 15px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(31, 32, 65, 0.75);
 	position: absolute;
-	/*z-index: 5;*/
+	/*z-index: 10;*/
 	width: 150px;
 }
 .form-visitor_input {
@@ -99,25 +102,18 @@ h1 {
 }
 .form-coming_button, .form-departure_button, .form-visitor_button {
 	width: 44px;
-	height: 43px;
+	height: 42px;
 	background-color: #FFFFFF;
 	background-image: url("../img/expand_more.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	border: none;
 	border-radius: 4px;
-	/*z-index: 10;*/
+	/*z-index: 5;*/
 	position: absolute;
 	right: 1px;
 	top: 1px;
 	cursor: pointer;
-}
-.form-coming_button, .form-departure_button {
-
-}
-
-.form-visitor_button {
-
 }
 /*форма запроса на поиск по дате*/
 .search h1 {
@@ -128,7 +124,6 @@ h1 {
 	line-height: 29px;
 	letter-spacing: 0em;
 	text-align: left;
-
 }
 .search-form {
 	display: flex;
@@ -139,10 +134,10 @@ h1 {
 	width: 320px;
 }
 .search-botton {
+	margin-top: 31px;
 	position: relative;
 }
 .search-botton_result {
-	margin-top: 31px;
 	padding: 14px 22px 15px 18px;
 	width: 320px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -158,10 +153,8 @@ h1 {
 	line-height: 15px;
 	letter-spacing: 0em;
 	text-align: center;
-
 }
 .search-botton_result_icon {
-	margin-top: 31px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	width: 44px;
 	height: 44px;
@@ -173,11 +166,249 @@ h1 {
 	right: 0;
 	top: 0;
 }
+/*----------------------------------------------------*/
 /*форма регистрации аккаунта*/
 .registration {
-
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.registration h1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #1F2041;
+}
+.registration-first-name_input, .registration-last-name_input, .form-birthday_input, .form-logins_login, .form-logins_pasword {
+	width: 320px;
+	margin-top: 20px;
+	padding: 13px 15px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(31, 32, 65, 0.25);
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.registration-sex {
+	/*width: 202px;*/
+	width: 202px;
+	margin-top: 11px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.registration-sex_man, .registration-sex_woman {
+	display: flex;
+	flex-wrap: wrap;
+	justify-items: center;
+	position: relative;
+}
+.registration-sex input[type=radio] {
+	display: none;
+}
+.registration-sex label{
+	width: 48px
+}
+.registration-sex input[type=radio]:checked + label:before {
+	width: 20px;
+	height: 20px;
+	background: url(../img/Rectangle_2.png) 0 0 no-repeat;
+}
+.registration-sex label:before {
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background: url(../img/Rectangle_1.png) 0 0 no-repeat;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.registration-sex label:hover:before {
+	filter: brightness(75%);
+}
+.registration-sex_text {
+	padding-left: 30px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(31, 32, 65, 0.5);
+	cursor: pointer;
+}
+.registration-sex_text:hover {
+	color: rgba(31, 32, 65, 0.75);
+}
+.birthday {
+	margin-top: 24px;
+}
+.form-birthday_input, .form-logins_login, .form-logins_pasword {
+	margin-top: 5px;
+}
+.logins {
+	margin-top: 20px;
+}
+.mailing {
+	margin-top: 10px;
+}
+.mailing-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+	padding-left: 50px;
+	width: 260px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+}
+.mailing-check {
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	padding: 5px 5px 5px 38px;
+	margin: 0;
+	position: relative;
+	cursor: pointer;
+}
+.mailing-check_input{
+	position: absolute;
+	opacity: 0;
+	cursor: inherit;
+}
+.mailing-text:before,
+.mailing-text:after{
+	content: '';
+	position: absolute;
+	top: 12px;
+	transition: 0.2s;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mailing-text:before{
+	left: 0;
+	width: 40px;
+	height: 20px;
+	margin-top: -10px;
+	border-radius: 10px;
+	background: #fff;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.mailing-text:after{
+	left: 4px;
+	height: 12px;
+	width: 12px;
+	margin-top: -6px;
+	background: rgba(31, 32, 65, 0.25);
+	border-radius: 10px;
+}
+.mailing-check_input:checked + .mailing-text:before{
+	background: #fff;
+	border: 1px solid rgba(31, 32, 65, 0.75);
+}
+.mailing-check_input:checked + .mailing-text:after{
+	left: 24px;
+	background: rgba(31, 32, 65, 0.75);
+}
+/*.mailing-check_input:focus + .mailing-text:before{
+	box-shadow: 0 0 0 3px rgba(50,150,255,.2);
+}*/
+/*.mailing-check_input:disabled + .mailing-text{
+	opacity: 0.35;
+}*/
+/*.mailing-check_input:disabled + .mailing-text:before{
+	background: #999;
+}*/
+.payment-botton {
+	margin-top: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	cursor: pointer;
+}
+.payment-botton_result {
+	padding: 14px 22px 15px 18px;
+	width: 320px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	color: #FFFFFF;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 15px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.payment-botton_result_icon {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	position: absolute;
+	background-image: url("../img/arrow_forward.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	right: 0;
+	top: 0;
+}
+.entry {
+	width: 320px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-items: center;
+	margin-top: 30px;
+}
+.entry-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+}
+.entryt-botton {
+	width: 99px;
+	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	position: relative;
+	padding: 2px;
+	display: inline-block;
+}
+.entryt-botton_result {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #BC9CFF;
+	cursor: pointer;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	padding: 14px 26px;
 }
 
+/*----------------------------------------------------*/
 /*центральный столбец*/
 .centr-wrap {}
 

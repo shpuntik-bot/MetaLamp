@@ -13,38 +13,82 @@
 <main>
 	<div class="logo"></div>
 	<div class="left-wrap">
+		<!--Секция поиск по пораметрам-->
 		<section class="search">
 			<h1>Найдём номера под ваши пожелания</h1>
 			<div class="search-form">
 				<div class="coming">
 					<p class="coming-text">ПРИБЫТИЕ</p>
 					<form class="form-coming" action="#" method="post">
-						<input class="form-coming_input" name="coming_input" placeholder="ДД.ММ.ГГГГ" type="search">
+						<input class="form-coming_input" name="coming_input" placeholder="ДД.ММ.ГГГГ" type="text">
 						<button class="form-coming_button" type="submit" aria-label="ДД.ММ.ГГГГ"></button>
 					</form>
 				</div>
 				<div class="departure">
 					<p class="departure-text">ВЫЕЗД</p>
 						<form class="form-departure" action="#" method="post">
-							<input class="form-departure_input" name="departure_input" placeholder="ДД.ММ.ГГГГ" type="search">
+							<input class="form-departure_input" name="departure_input" placeholder="ДД.ММ.ГГГГ" type="text">
 							<button class="form-departure_button" type="submit" aria-label="ДД.ММ.ГГГГ"></button>
 						</form>
 				</div>
 				<div class="visitor">
 					<p class="visitor-text">ГОСТИ</p>
 					<form class="form-visitor" action="#" method="post">
-						<input class="form-visitor_input" name="visitor_input" placeholder="Сколько гостей" type="search">
+						<input class="form-visitor_input" name="visitor_input" placeholder="Сколько гостей" type="text">
 						<button class="form-visitor_button" type="submit" aria-label="Сколько гостей"></button>
 					</form>
 				</div>
 				<div class="search-botton">
-					<p class="search-botton_result" value="ПОДОБРАТЬ НОМЕР">ПОДОБРАТЬ НОМЕР <spans class="search-botton_result_icon"></spans></p>
-
+					<p class="search-botton_result" value="ПОДОБРАТЬ НОМЕР">ПОДОБРАТЬ НОМЕР <span class="search-botton_result_icon"></span></p>
 				</div>
 			</div>
 		</section>
+		<!--Секция регистрация-->
 		<section class="registration">
 			<h1>Регистрация аккаунта</h1>
+			<div class="registration-first-name">
+				<input class="registration-first-name_input" name="visitor_input" placeholder="Имя" type="text">
+			</div>
+			<div class="registration-last-name">
+				<input class="registration-last-name_input" name="visitor_input" placeholder="Фамилия" type="text">
+			</div>
+			<div class="registration-sex">
+				<div class="registration-sex_man">
+					<input class="registration-sex_radio" type="radio" id="radio_man" name="sex" value="man" checked>
+					<label for="radio_man" class="registration-sex_text">Мужчина</label>
+				</div>
+				<div class="registration-sex_woman">
+					<input class="registration-sex_radio" type="radio" id="radio_woman" name="sex" value="woman">
+					<label for="radio_woman" class="registration-sex_text">Женщина</label>
+				</div>
+			</div>
+			<div class="birthday">
+				<p class="birthday-text">Дата рождения</p>
+				<div class="form-birthday">
+					<input class="form-birthday_input" name="birthday_input" placeholder="ДД.ММ.ГГГГ" type="text">
+				</div>
+			</div>
+			<div class="logins">
+				<p class="logins-text">Данные для входа в сервис</p>
+				<div class="form-logins">
+					<input class="form-logins_login" name="login_input" placeholder="Email" type="email">
+					<input class="form-logins_pasword" name="pasword_input" placeholder="Пароль" type="password">
+				</div>
+			</div>
+			<div class="mailing">
+				<label class="mailing-check">
+					<input class="mailing-check_input" name="mailing_input" placeholder="Получать спецпредложения" type="checkbox">
+					<span class="mailing-text">Получать спецпредложения</span>
+				</label>
+
+			</div>
+			<div class="payment-botton">
+				<p class="payment-botton_result" value="ПЕРЕЙТИ К ОПЛАТЕ">ПЕРЕЙТИ К ОПЛАТЕ<span class="payment-botton_result_icon"></span></p>
+			</div>
+			<div class="entry">
+				<p class="entry-text">Уже есть аккаунт на Toxin</p>
+				<div class="entryt-botton" value="ВОЙТИ"><div class="entryt-botton_result">ВОЙТИ</div></div>
+			</div>
 		</section>
 	</div>
 	<div class="centr-wrap">
