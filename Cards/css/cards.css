@@ -323,15 +323,6 @@ h1 {
 	left: 24px;
 	background: rgba(31, 32, 65, 0.75);
 }
-/*.mailing-check_input:focus + .mailing-text:before{
-	box-shadow: 0 0 0 3px rgba(50,150,255,.2);
-}*/
-/*.mailing-check_input:disabled + .mailing-text{
-	opacity: 0.35;
-}*/
-/*.mailing-check_input:disabled + .mailing-text:before{
-	background: #999;
-}*/
 .payment-botton {
 	margin-top: 24px;
 	display: flex;
@@ -411,6 +402,155 @@ h1 {
 /*----------------------------------------------------*/
 /*центральный столбец*/
 .centr-wrap {}
+.result, .login {
+	width: 380px;
+	padding: 40px 30px 30px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	margin-top: 40px;
+	padding: 30px;
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.search-result {
+	width: 320px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+}
+.search-result-room {
+	font-size: 14px;
+	line-height: 17px;
+	color: #1F2041;
+}
+.search-result-room_nom {
+	font-size: 24px;
+	line-height: 17px;
+	color: #1F2041;
+}
+.search-result-room_type {
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #BC9CFF;
+}
+.search-result-price {
+	line-height: 18px;
+	color: rgba(31, 32, 65, 0.5);
+}
+.result-coming, .result-departure, .result-visitor, .result-price, .reserv-button {
+	margin-top: 20px;
+}
+
+.result-price, .reserv-button {
+	width: 320px;
+}
+.price-room, .price-services, .price-more-services {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+}
+.price-room, .price-services, .price-more-services, .total-result {
+	position: relative;
+	margin-top: 10px;
+	height: 24px;
+	/*display: flex;
+	flex-wrap: wrap;*/
+	/*justify-content: space-between;*/
+}
+.price-room_text, .price-services_text, .price-more-services_text {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 214px;
+	/*width: 240px;*/
+}
+.price-more-services {
+	height: 36px;
+}
+.price-services_inf, .price-more-services_inf {
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	position: absolute;
+	left: 214px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 2px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	color: rgba(31, 32, 65, 0.25);
+}
+.price-room_summ, .price-services_summ, .price-more-services_summ {
+	position: absolute;
+	right: 0;
+}
+.total-result_text, .total-result_summ {
+	position: absolute;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 23px;
+	color: #1F2041;
+}
+.total-result_text {
+	left: 0;
+}
+.total-result_summ {
+	right: 0;
+}
+.reserv-button {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	cursor: pointer;
+}
+.reserv-button_result {
+	padding: 14px 22px 15px 18px;
+	width: 320px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	color: #FFFFFF;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 15px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.reserv-button_result_icon {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	position: absolute;
+	background-image: url("../img/arrow_forward.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	right: 0;
+	top: 0;
+}
+
 
 /*правый столбец*/
 .left-wrap {}
