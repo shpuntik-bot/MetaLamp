@@ -61,7 +61,6 @@ h1 {
 .coming, .departure, .visitor {
 	width: 150px;
 	margin-top: 21px;
-	/*position: relative;*/
 }
 /*надписи над полями фильтра*/
 .coming-text, .departure-text, .visitor-text {
@@ -94,7 +93,6 @@ h1 {
 	line-height: 18px;
 	color: rgba(31, 32, 65, 0.75);
 	position: absolute;
-	/*z-index: 10;*/
 	width: 150px;
 }
 .form-visitor_input {
@@ -109,7 +107,6 @@ h1 {
 	background-repeat: no-repeat;
 	border: none;
 	border-radius: 4px;
-	/*z-index: 5;*/
 	position: absolute;
 	right: 1px;
 	top: 1px;
@@ -122,7 +119,6 @@ h1 {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 29px;
-	letter-spacing: 0em;
 	text-align: left;
 }
 .search-form {
@@ -133,11 +129,11 @@ h1 {
 .search-form_visitor {
 	width: 320px;
 }
-.search-botton {
+.search-button {
 	margin-top: 31px;
 	position: relative;
 }
-.search-botton_result {
+.search-button_result {
 	padding: 14px 22px 15px 18px;
 	width: 320px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -154,7 +150,7 @@ h1 {
 	letter-spacing: 0em;
 	text-align: center;
 }
-.search-botton_result_icon {
+.search-button_result_icon {
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	width: 44px;
 	height: 44px;
@@ -323,7 +319,7 @@ h1 {
 	left: 24px;
 	background: rgba(31, 32, 65, 0.75);
 }
-.payment-botton {
+.payment-button {
 	margin-top: 24px;
 	display: flex;
 	flex-wrap: wrap;
@@ -331,7 +327,7 @@ h1 {
 	position: relative;
 	cursor: pointer;
 }
-.payment-botton_result {
+.payment-button_result {
 	padding: 14px 22px 15px 18px;
 	width: 320px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -345,7 +341,7 @@ h1 {
 	letter-spacing: 0em;
 	text-align: center;
 }
-.payment-botton_result_icon {
+.payment-button_result_icon {
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	width: 44px;
 	height: 44px;
@@ -376,7 +372,7 @@ h1 {
 	text-align: center;
 	color: #000000;
 }
-.entryt-botton {
+.entryt-button {
 	width: 99px;
 	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
@@ -384,7 +380,7 @@ h1 {
 	padding: 2px;
 	display: inline-block;
 }
-.entryt-botton_result {
+.entryt-button_result {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -444,6 +440,7 @@ h1 {
 	color: #BC9CFF;
 }
 .search-result-price {
+	padding-top: 3px;
 	line-height: 18px;
 	color: rgba(31, 32, 65, 0.5);
 }
@@ -466,16 +463,12 @@ h1 {
 	position: relative;
 	margin-top: 10px;
 	height: 24px;
-	/*display: flex;
-	flex-wrap: wrap;*/
-	/*justify-content: space-between;*/
 }
 .price-room_text, .price-services_text, .price-more-services_text {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 214px;
-	/*width: 240px;*/
 }
 .price-more-services {
 	height: 36px;
@@ -501,6 +494,9 @@ h1 {
 .price-room_summ, .price-services_summ, .price-more-services_summ {
 	position: absolute;
 	right: 0;
+}
+.total-result {
+	margin-top: 20px;
 }
 .total-result_text, .total-result_summ {
 	position: absolute;
@@ -549,6 +545,104 @@ h1 {
 	background-repeat: no-repeat;
 	right: 0;
 	top: 0;
+}
+/*поле логин*/
+.login {}
+.login-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #1F2041;
+}
+.login-form {
+	margin-top: 10px;
+}
+.login-email_input, .login-pasw_input {
+	width: 320px;
+
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 12px 15px 8px;
+	margin-top: 10px;
+}
+.login-button {
+	margin-top: 28px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	cursor: pointer;
+}
+.login-button_result {
+	padding: 14px 22px 15px 18px;
+	width: 320px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	color: #FFFFFF;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 15px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.login-button_result_icon {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	position: absolute;
+	background-image: url("../img/arrow_forward.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	right: 0;
+	top: 0;
+}
+.login-entry {
+	width: 320px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-items: center;
+	margin-top: 30px;
+}
+.login-entry-text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+}
+.login-entryt-button {
+	width: 99px;
+	background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	position: relative;
+	padding: 2px;
+	display: inline-block;
+}
+.login-entryt-button_result {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #BC9CFF;
+	cursor: pointer;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	padding: 14px 18px;
 }
 
 
