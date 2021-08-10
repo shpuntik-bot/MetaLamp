@@ -13,7 +13,6 @@ body {
 	max-width: 1440px;
 	min-width: 320px;
 	font-family: Montserrat;
-	font-size: 19px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 19px;
@@ -40,7 +39,7 @@ h1 {
 	background-position: center;
 	padding: 30px;
 }
-.left-wrap, .centr-wrap, .left-wrap {
+.left-wrap, .centr-wrap, .right-wrap {
 	margin-top: 110px;
 }
 /*левый столбец*/
@@ -141,7 +140,7 @@ h1 {
 	text-align: center;
 	color: #FFFFFF;
 	font-size: 12px;
-	line-height: 14,63px;
+	line-height: 14px;
 	font-family: Montserrat;
 	font-size: 12px;
 	font-style: normal;
@@ -561,13 +560,18 @@ h1 {
 }
 .login-email_input, .login-pasw_input {
 	width: 320px;
-
 	background: #FFFFFF;
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
 	border-radius: 4px;
 	padding: 12px 15px 8px;
 	margin-top: 10px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.25);
 }
 .login-button {
 	margin-top: 28px;
@@ -647,4 +651,179 @@ h1 {
 
 
 /*правый столбец*/
-.left-wrap {}
+.right-wrap {}
+.calendar {
+	width: 320px;
+	padding: 40px 30px 30px;
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding: 20px;
+	margin-top: 40px;
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.calendar-top, .calendar-bottom {
+	width: 280px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.calendar-top_left, .calendar-top_right {
+	width: 24px;
+	height: 24px;
+}
+.calendar-top_left {
+	background-image: url("../img/arrow_left_blue.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.calendar-top_right {
+	background-image: url("../img/arrow_right_blue.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.calendar-month-year {
+	height: 24px;
+}
+.calendar-month, .calendar-year {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 23px;
+	text-align: center;
+	color: #1F2041;
+}
+
+.calendar-month {
+	margin-right: 10px;
+}
+.calendar-year {}
+.calendar-table {
+	margin: 30px 1px 0px;
+	border-collapse: collapse;
+
+}
+.calendar-table_title td {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	align-items: center;
+	text-align: center;
+	color: #BC9CFF;
+}
+.calendar-table td {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-collapse: collapse;
+	cursor: pointer;
+	z-index: 5;
+}
+.current-month {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	align-items: center;
+	text-align: center;
+	color: rgba(31, 32, 65, 0.5);
+}
+.old-month, .future-month {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	align-items: center;
+	text-align: center;
+	color: rgba(31, 32, 65, 0.25);
+}
+
+.calendar-month-today {
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border-radius: 22px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+}
+.current-day_start, .current-day_end {
+	/*display: block;*/
+	width: 40px;
+	height: 40px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	z-index: 10;
+}
+.current-day_end {
+
+}
+.current-day_live {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	opacity: 0.25;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	align-items: center;
+	text-align: center;
+	color: rgba(31, 32, 65, 0.5);
+	border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-image-slice: 1;
+}
+.current-day_live_start {
+	/*border-radius: 22px;*/
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	opacity: 0.25;
+	border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-image-slice: 1;
+	z-index: 5;
+}
+.current-day_live::before, .current-day_live::after {
+	content: " ";
+	width: 20px;
+	height: 40px;
+	width: 20px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	opacity: 0.25;
+	z-index: 5;
+}
+.current-day_live::after {
+
+}
+.calendar-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 20px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #BC9CFF;
+}
+
+
