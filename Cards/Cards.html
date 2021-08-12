@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Cards</title>
@@ -7,6 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link rel="stylesheet" type="text/css" href="css/cards.css">
+	<link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
 </head>
 <body>
 <header></header>
@@ -162,72 +165,7 @@
 	</div>
 	<div class="right-wrap">
 		<section class="calendar">
-			<div class="calendar-top">
-				<p class="calendar-top_left"></p>
-				<div class="calendar-month-year">
-					<span class="calendar-month">Август</span>
-					<span class="calendar-year">2019</span>
-				</div>
-				<p class="calendar-top_right"></p>
-			</div>
-			<table class="calendar-table">
-				<tbody>
-					<tr class="calendar-table_title">
-						<td>Пн</td>
-						<td>Вт</td>
-						<td>Ср</td>
-						<td>Чт</td>
-						<td>Пт</td>
-						<td>Сб</td>
-						<td>Вс</td>
-					</tr>
-					<tr>
-						<td class="old-month"><div>29</div></td>
-						<td class="old-month">30</td>
-						<td class="old-month">31</td>
-						<td class="current-month">1</td>
-						<td class="current-month">2</td>
-						<td class="current-month">3</td>
-						<td class="current-month">4</td>
-					</tr>
-					<tr>
-						<td class="current-month">5</td>
-						<td class="current-month">6</td>
-						<td class="current-month">7</td>
-						<td class="current-month, calendar-month-today">8</td>
-						<td class="current-month">9</td>
-						<td class="current-month">10</td>
-						<td class="current-month">11</td>
-					</tr>
-					<tr>
-						<td  class="current-month">12</td>
-						<td class="current-month">13</td>
-						<td class="current-month">14</td>
-						<td class="current-month">15</td>
-						<td class="current-month">16</td>
-						<td class="current-month">17</td>
-						<td class="current-month">18</td>
-					</tr>
-					<tr>
-						<td class="current-month current-day_live_start"><div class="current-day_start">19</div></td>
-						<td class="current-month current-day_live"><div class="current-day_start">20</div></td>
-						<td class="current-month current-day_live"><div class="current-day_start">21</div></td>
-						<td class="current-month current-day_live"><div class="current-day_start">22</div></td>
-						<td class="current-month current-day_live_end"><div class="current-day_end">23</div></td>
-						<td class="current-month">24</td>
-						<td class="current-month">25</td>
-					</tr>
-					<tr>
-						<td class="current-month">26</td>
-						<td class="current-month">27</td>
-						<td class="current-month">28</td>
-						<td class="current-month">29</td>
-						<td class="current-month">30</td>
-						<td class="current-month">31</td>
-						<td class="future-month">1</td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="datepicker-here" data-position="right top" data-range="true" data-multiple-dates-separator=" - "></div>
 			<div class="calendar-bottom">
 				<div class="calendar-bottom_clear">очистить</div>
 				<div class="calendar-bottom_apply">применить</div>
