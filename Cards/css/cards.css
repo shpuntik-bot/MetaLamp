@@ -698,7 +698,6 @@ h1 {
 	text-align: center;
 	color: #1F2041;
 }
-
 .calendar-month {
 	margin-right: 10px;
 }
@@ -706,7 +705,6 @@ h1 {
 .calendar-table {
 	margin: 30px 1px 0px;
 	border-collapse: collapse;
-
 }
 .calendar-table_title td {
 	font-family: Montserrat;
@@ -746,7 +744,6 @@ h1 {
 	text-align: center;
 	color: rgba(31, 32, 65, 0.25);
 }
-
 .calendar-month-today {
 	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 	border-radius: 22px;
@@ -760,7 +757,6 @@ h1 {
 	color: #FFFFFF;
 }
 .current-day_start, .current-day_end {
-	/*display: block;*/
 	width: 40px;
 	height: 40px;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -775,9 +771,7 @@ h1 {
 	color: #FFFFFF;
 	z-index: 10;
 }
-.current-day_end {
-
-}
+.current-day_end {}
 .current-day_live {
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	opacity: 0.25;
@@ -792,7 +786,6 @@ h1 {
 	border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-image-slice: 1;
 }
-
 .calendar-bottom {
 	display: flex;
 	flex-wrap: wrap;
@@ -806,5 +799,161 @@ h1 {
 	text-transform: uppercase;
 	color: #BC9CFF;
 }
+
+/*------------мини слайды------------*/
+.result-mini {
+	width: 270px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+	border-radius: 4px;
+	margin-top: 40px;
+	padding: 20px;
+}
+
+.result-mini-top {
+	height: 132px;
+	position: relative;
+}
+.result-mini-top_fon {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	width: 270px;
+	height: 152px;
+	border-radius: 4px 4px 0 0;
+	z-index: 5;
+}
+.mini-first-fon {
+	background-image: url("../img/slide/image_1.png");
+}
+.mini-last-fon {
+	background-image: url("../img/slide/image_2.png");
+}
+.result-mini-top_back {
+	position: absolute;
+	left: -20px;
+	top: 33px;
+	width: 44px;
+	height: 44px;
+	background-image: url("../img/arrow_left_white.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 10;
+}
+.result-mini-top_next {
+	position: absolute;
+	right: -20px;
+	top: 33px;
+	width: 44px;
+	height: 44px;
+	background-image: url("../img/arrow_right_white.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 10;
+}
+.result-mini-top_slide {
+	width: 36px;
+	position: absolute;
+	top: 108px;
+	right: 15px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 10;
+}
+.result-mini-top_slide_focus {
+	width: 8px;
+	height: 8px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	background: #FFFFFF;
+	box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+}
+.result-mini-top_slide_other {
+	width: 8px;
+	height: 8px;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+}
+.result-mini-center {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.result-mini-center_text-namber {
+	font-size: 14px;
+	line-height: 17px;
+	color: #1F2041;
+}
+.result-mini-center_text-type {
+	font-size: 12px;
+	line-height: 15px;
+	color: #BC9CFF;
+}
+.result-mini-center_text-summ {
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(31, 32, 65, 0.5);
+}
+.result-mini-center_text-taime {
+	font-weight: normal;
+	font-size: 12px;
+}
+.result-mini-bottom {
+	margin-top: 12px;
+	border-top: 2px solid rgba(31, 32, 65, 0.1);
+	padding-top: 8px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.result-mini-bottom_rating {}
+.rating-result {
+	width: 120px;
+	display: flex;
+	justify-content: space-between;
+	color: #8BA4F9;
+}
+.rating-result_star {
+	display: inline-block;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 20px;
+	align-items: center;
+	text-align: center;
+	z-index: 5;
+}
+.rating-result_star-on::before {
+	content: "\2605";
+	position: absolute;
+	z-index: 10;
+	color: #8BA4F9;
+}
+.result-mini-bottom_comment, .result-mini-bottom_comment-text {
+	font-size: 12px;
+	line-height: 14px;
+	/*text-align: right;*/
+	color: rgba(31, 32, 65, 0.5);
+	padding-top: 4px;
+}
+.result-mini-bottom_comment-text {
+	font-weight: normal;
+}
+
 
 
