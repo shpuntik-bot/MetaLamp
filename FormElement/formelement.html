@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Element</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/formelement.css">
+	<link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+	<script src="js/formelement.js" defer></script>
+	<script src="jquery-3.4.1.min.js" defer></script>
+	<script src="js/datepicker.min.js" defer></script>
+</head>
+<body>
+	<main>
+		<div class="logo"></div>
+		<div class="left-wrap">
+			<div class="text-field-default">
+				<div class="text-field-default_caption">Text Field<span class="text-field-default_type">Default</span></div>
+				<div class="text-field-default_sample">Email</div>
+			</div>
+			<div class="text-field-focus">
+				<div class="text-field-focus_caption">Text Field<span class="text-field-focus_type">Hover / Focus</span></div>
+				<div class="text-field-focus_sample">This is pretty awesome</div>
+			</div>
+			<div class="drop-field">
+				<div class="drop-field_caption">Dropdown</div>
+				<p class="drop-field-list">
+					<select class="drop-field_sample">
+						<option>Сколько гостей</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+					<div class=""></div>
+				</p>
+			</div>
+			<div class="masked-field">
+				<div class="masked-field_caption">masked text field</div>
+				<div class="masked-field_sample">ДД.ММ.ГГГГ</div>
+			</div>
+			<div class="date-field">
+				<div class="date-field-befor">
+					<div class="date-field-befor_caption">date Dropdown</div>
+						<form class="date-befor-form" action="#" method="post">
+							<input class="date-befor-forme_input" name="date-befor_input" placeholder="ДД.ММ.ГГГГ" type="text">
+							<button class="date-befor-forme_button" type="submit" aria-label="ДД.ММ.ГГГГ"></button>
+						</form>
+					<div class=""></div>
+				</div>
+				<div class="date-field-after">
+					<div class="date-field-after_caption">date Dropdown</div>
+					<form class="date-after-form" action="#" method="post">
+						<input class="date-after-forme_input" name="date-after_input" placeholder="ДД.ММ.ГГГГ" type="text">
+						<button class="date-after-forme_button" type="submit" aria-label="ДД.ММ.ГГГГ"></button>
+					</form>
+				</div>
+			</div>
+			<div class="filter-date-field">
+				<div class="filter-date_caption">filter date dropdown</div>
+				<form class="filter-date-form" action="#" method="post">
+					<input class="filter-date-forme_input" name="filter-date_input" placeholder="ДД.ММ. - ДД.ММ." type="text">
+					<button class="filter-date-forme_button" type="submit"></button>
+				</form>
+			</div>
+			<div class="subs-field">
+				<div class="subs-field_caption">subscription text field</div>
+				<form class="subs-form" action="#" method="post">
+					<input class="subs-forme_input" name="subs_input" placeholder="Email" type="text">
+					<button class="subs_button" type="submit"></button>
+				</form>
+			</div>
+			<div class="drop-room-default-field">
+				<div class="drop-room-default_caption">dropdown<span class="drop-room-default_type">Default</span></div>
+				<div class="drop-room-default-list">
+					<select class="drop-room-default_sample" placeholder="2 спальни 2 кровати">
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+			</div>
+			<div class="drop-room-expand-field">
+				<div class="drop-room-expand_caption">dropdown<span class="drop-room-expand_type">expanded</span></div>
+				<div class="drop-room drop-expand_sample">
+					<div class="drop-room drop-expand_sample-text">2 спальни, 2 кровати...</div>
+					<div class="drop-room drop-expand_sample-button"></div>
+				</div>
+				<div class="drop-room-expand drop-expand_sample-list">
+					<div class="drop-bedroom drop-expand_row">
+						<div  class="drop-bedroom_text drop-expand_row-text">спальни</div>
+						<div class="drop-bedroom_select drop-expand_select">
+							<div class="drop-bedroom_select-small drop-select_small">-</div>
+							<div class="drop-bedroom_select-result drop-select_result">2</div>
+							<div class="drop-bedroom_select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-bed drop-expand_row">
+						<div  class="drop-bed_text drop-expand_row-text">кровати</div>
+						<div class="drop-bed_select drop-expand_select">
+							<div class="drop-bed_select-small drop-select_small">-</div>
+							<div class="drop-bed_select-result drop-select_result">2</div>
+							<div class="drop-bed_select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-toilet drop-expand_row">
+						<div  class="drop-toilet_text drop-expand_row-text">ванные комнаты</div>
+						<div class="drop-toilet_select drop-expand_select">
+							<div class="drop-toilet_select-small drop-select_small">-</div>
+							<div class="drop-toilet_select-result drop-select_result">0</div>
+							<div class="drop-toilet_select-more drop-select_more">+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="check-list-closed">
+				<div class="check-list_text">expandable checkbox list</div>
+				<div class="check-list_button check-list-closed_button"></div>
+			</div>
+			<div class="check-list-open">
+				<div class="check-list_text">expandable checkbox list</div>
+				<div class="check-list_button check-list-open_button"></div>
+				<div class="check-list-open-block">
+					<label class="check-list_label" for="breakfast">
+						<input class="check-list_input" type="checkbox" id="breakfast">
+						<span>Завтрак</span>
+					</label>
+					<label class="check-list_label" for="table">
+						<input class="check-list_input" type="checkbox" id="table" checked>
+						<span>Письменный стол</span>
+					</label>
+					<label class="check-list_label" for="chair">
+						<input class="check-list_input" type="checkbox" id="chair" checked>
+						<span>Стул для кормления</span>
+					</label>
+					<label class="check-list_label" for="bed">
+						<input class="check-list_input" type="checkbox" id="bed" checked>
+						<span>Кроватка</span>
+					</label>
+					<label class="check-list_label" for="tvset_ferst">
+						<input class="check-list_input" type="checkbox" id="tvset_ferst">
+						<span>Телевизор</span>
+					</label>
+					<label class="check-list_label" for="shampoo_ferst">
+						<input class="check-list_input" type="checkbox" id="shampoo_ferst">
+						<span>Шампунь</span>
+					</label>
+					<label class="check-list_label" for="tvset_second">
+						<input class="check-list_input" type="checkbox" id="tvset_second">
+						<span>Телевизор</span>
+					</label>
+					<label class="check-list_label" for="shampoo_second">
+						<input class="check-list_input" type="checkbox" id="shampoo_second">
+						<span>Шампунь</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="centr-wrap">
+			<div class="check-button">
+				<div class="check-button_text">Checkbox Buttons</div>
+				<div class="check-button-block">
+					<label class="check-button_label" for="smoke">
+						<input class="check-button_input" type="checkbox" id="smoke">
+						<span>Можно курить</span>
+					</label>
+					<label class="check-button_label" for="pet">
+						<input class="check-button_input" type="checkbox" id="pet" checked>
+						<span>Можно с питомцамир</span>
+					</label>
+					<label class="check-button_label" for="guest">
+						<input class="check-button_input" type="checkbox" id="guest" checked>
+						<span>Можно пригласить гостей (до 10 человек)</span>
+					</label>
+				</div>
+			</div>
+			<div class="radio-button">
+				<div class="radio-button_text">radio buttons</div>
+				<div class="registration-sex">
+					<div class="registration-sex_man">
+						<input class="registration-sex_radio" type="radio" id="radio_man" name="sex" value="man" checked>
+						<label for="radio_man" class="registration-sex_text">Мужчина</label>
+					</div>
+					<div class="registration-sex_woman">
+						<input class="registration-sex_radio" type="radio" id="radio_woman" name="sex" value="woman">
+						<label for="radio_woman" class="registration-sex_text">Женщина</label>
+					</div>
+				</div>
+			</div>
+			<div class="togle-button">
+				<div class="togle-button_text">toggle</div>
+				<div class="mailing">
+					<label class="mailing-check">
+						<input class="mailing-check_input" name="mailing_input" placeholder="Получать спецпредложения" type="checkbox" checked>
+						<span class="mailing-text">Получать спецпредложения</span>
+					</label>
+					<label class="mailing-check">
+						<input class="mailing-check_input" name="mailing_input" placeholder="Получать спецпредложения" type="checkbox">
+						<span class="mailing-text">Получать спецпредложения</span>
+					</label>
+				</div>
+			</div>
+			<div class="like-button">
+				<div class="like-button_text">like button</div>
+				<div class="like-button-check">
+					<label class="like-check_button" for="check-like">
+						<input class="like-check_input" type="checkbox" id="check-like">
+						<span>2</span>
+					</label>
+					<label class="like-check_button" for="check-like_liked">
+						<input class="like-check_input" type="checkbox" id="check-like_liked" checked>
+						<span>12</span>
+					</label>
+				</div>
+			</div>
+			<div class="rate_button">
+				<div class="rate_button_text">rate button</div>
+				<div class="rate_button_stars">
+					<div class="rating-star">
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+						<div class="rating-result_star">&#9734</div>
+					</div>
+					<div class="rating-star">
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+						<div class="rating-result_star rating-result_star-on">&#9734</div>
+					</div>
+				</div>
+			</div>
+			<div class="drop-visitor-expand-field">
+				<div class="drop-visitor-expand_caption">dropdown</div>
+				<div class="drop-visitor drop-expand_sample">
+					<div class="drop-visitor drop-expand_sample-text">Сколько гостей</div>
+					<div class="drop-visitors drop-expand_sample-button"></div>
+				</div>
+				<div class="drop-room-expand drop-expand_sample-list">
+					<div class="drop-big drop-expand_row">
+						<div  class="drop-big_text drop-expand_row-text">взрослые</div>
+						<div class="drop-big_select drop-expand_select">
+							<div class="drop-big_select-small drop-select_small">-</div>
+							<div class="drop-big_select-result drop-select_result">0</div>
+							<div class="drop-big_select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-children drop-expand_row">
+						<div  class="drop-children_text drop-expand_row-text">дети</div>
+						<div class="drop-children_select drop-expand_select">
+							<div class="drop-children_select-small drop-select_small">-</div>
+							<div class="drop-children_select-result drop-select_result">0</div>
+							<div class="drop-children_select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-babies drop-expand_row">
+						<div  class="drop-babies_text drop-expand_row-text">младенцы</div>
+						<div class="drop-babies_select drop-expand_select">
+							<div class="drop-babies_select-small drop-select_small">-</div>
+							<div class="drop-babies_select-result drop-select_result">0</div>
+							<div class="drop-babies_select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-input">
+						<div class="drop-input_text">применить</div>
+					</div>
+				</div>
+			</div>
+			<div class="rich-check-buttons">
+				<div class="rich-check_text">rich checkbox buttons</div>
+				<div class="rich-check_list">
+					<label class="rich-check_label" for="wide-kor">
+						<input class="rich-check_input" type="checkbox" id="wide-kor">
+						<span class="rich-check_name">Широкий коридор</span>
+					</label>
+					<div class="rich-check_explan">Ширина коридоров в номере не менее 91 см.</div>
+					<label class="rich-check_label" for="assistant">
+						<input class="rich-check_input" type="checkbox" id="assistant">
+						<span class="rich-check_name">Помощник для инвалидов</span>
+					</label>
+					<div class="rich-check_explan">На 1 этаже вас встретит специалист и проводит до номера.</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-wrap">
+			<div class="range-slider">
+				<div class="range-title">
+					<div class="range-title-text">Range Slider</div>
+					<div class="range-title-summ">
+						<div class="range-title-summ_min"></div>
+						<div class="range-title-summ_text">-</div>
+						<div class="range-title-summ_max"></div>
+					</div>
+				</div>
+				<div class="range-slider-assist">
+					<div class="container">
+						<div class="slider">
+							<div class="track"></div>
+						</div>
+						<div class="output o0"> </div>
+						<div class="thumb t0"></div>
+						<div class="output o1"> </div>
+						<div class="thumb t1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="buttons-group">
+				<div class="buttons-group_text">buttons</div>
+				<div class="button-full">
+					<a href="#" class="button-full_active">CLICK ME</a>
+					<a href="#" class="button-full_active button-full_deactive">CLICK ME</a>
+				</div>
+				<div class="button-transp">
+					<div class="button-transp_border-active"><a href="#" class="button-transp_active">CLICK ME</a></div>
+					<div class="button-transp_border-active button-transp_border-deactive"><a href="#" class="button-transp_active button-transp_deactive">CLICK ME</a></div>
+				</div>
+				<div class="button-href">
+					<a href="#" class="button-href_active">CLICK ME</a>
+					<a href="#" class="button-href_active button-href_deactive">CLICK ME</a>
+				</div>
+				<div class="button-big">
+					<p class="button-big_backg button-big_text" value="ПЕРЕЙТИ К ОПЛАТЕ">ПЕРЕЙТИ К ОПЛАТЕ<span class="button-big_icon"></span></p>
+				</div>
+			</div>
+			<div class="pagination-list">
+				<div class="pagination-list_capt">pagination</div>
+				<div class="pagination-href">
+					<a class="pagination-href_punkt pagination-href_punkt-active" href="#">1</a>
+					<a class="pagination-href_punkt" href="#">2</a>
+					<a class="pagination-href_punkt" href="#">3</a>
+					<a class="pagination-href_punkt" href="#">...</a>
+					<a class="pagination-href_punkt" href="#">15</a>
+					<a class="pagination-href_punkt pagination-href_punkt-next" href="#"><span class="pagination-href_punkt-button"></span> </a>
+				</div>
+				<div class="pagination-list_text">1 – 12 из 100+ вариантов аренды</div>
+			</div>
+			<div class="drop-visitor-expand-field">
+				<div class="drop-visitor-expand_caption">dropdown</div>
+				<div class="drop-visitor drop-expand_sample">
+					<div class="drop-visitor drop-expand_sample-text">Сколько гостей</div>
+					<div class="drop-visitors drop-expand_sample-button"></div>
+				</div>
+				<div class="drop-room-expand drop-expand_sample-list">
+					<div class="drop-big drop-expand_row">
+						<div  class="drop-big_text drop-expand_row-text">взрослые</div>
+						<div class="drop-big_select drop-expand_select">
+							<div class="drop-big_select-small drop-select_small">-</div>
+							<div class="drop-big_select-result drop-select_result">2</div>
+							<div class="drop-big_select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-children drop-expand_row">
+						<div  class="drop-children_text drop-expand_row-text">дети</div>
+						<div class="drop-children_select drop-expand_select">
+							<div class="drop-children_select-small drop-select_small">-</div>
+							<div class="drop-children_select-result drop-select_result">1</div>
+							<div class="drop-children_select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-babies drop-expand_row">
+						<div  class="drop-babies_text drop-expand_row-text">младенцы</div>
+						<div class="drop-babies_select drop-expand_select">
+							<div class="drop-babies_select-small drop-select_small">-</div>
+							<div class="drop-babies_select-result drop-select_result">0</div>
+							<div class="drop-babies_select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-input drop-input_more">
+						<div class="drop-clear_text">очистить</div>
+						<div class="drop-input_text">применить</div>
+					</div>
+				</div>
+			</div>
+			<div class="bullet-list">
+				<div class="bullet-list_text">bullet list</div>
+				<ul class="bullet-list_ul">
+					<li><span class="bullet-list_li"></span><span class="bullet-list_li-text">Нельзя с питомцами</span></li>
+					<li><span class="bullet-list_li"></span><span class="bullet-list_li-text">Без вечеринок и мероприятий</span></li>
+					<li><span class="bullet-list_li"></span><span class="bullet-list_li-text">Время прибытия — после 13:00,	а выезд до 12:00</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom-wrap">
+			<div class="option-rom">
+				<div class="option-comfort">
+					<div class="option-comfort_img"></div>
+					<div class="option-comfort_text">
+						<div class="option-comfort_text-title">Комфорт</div>
+						<div class="option-comfort_text-paragraph">Шумопоглощающие стены</div>
+					</div>
+				</div>
+				<div class="option-convent">
+					<div class="option-convent_img"></div>
+					<div class="option-convent_text">
+						<div class="option-convent_text-title">Удобство</div>
+						<div class="option-convents_text-paragraph">Окно в каждой из спален</div>
+					</div>
+				</div>
+			</div>
+			<div class="comment-group">
+				<div class="comment-user">
+					<div class="comment-user_img"></div>
+					<div class="comment-user_text">
+						<div class="comment-user_text-title">Мурад Сарафанов</div>
+						<div class="comment-user_text-paragraph">5 дней назад</div>
+					</div>
+				</div>
+				<div class="comment-text">
+					<div class="comment-text_like">
+						<div class="like-button-check">
+							<label class="like-check_button" for="check-like_liked">
+								<input class="like-check_input" type="checkbox" id="check-like_liked" checked>
+								<span>12</span>
+							</label>
+						</div>
+					</div>
+					<div class="comment-text_write">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="new-line"></div>
+	<br>
+</body>
+</html>
