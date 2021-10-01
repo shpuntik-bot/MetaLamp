@@ -1,5 +1,6 @@
-
-
+//подключаем jQuery в сборку, но лучьше в html
+//import 'jquery-3.4.1.min.js';
+//-----------------------------------------//
 // подключение стилей 
 import './css/style.css';                           //основной стиль страницы со стилями относящимеся только к странице
 import './modules/header/header-style.css';         //основной стиль хедера
@@ -25,11 +26,15 @@ import './modules/footer/subscribe/subscribe.css';  //блок рассылок
 //import html from "./formelement.html";
 //---------------------------//
 
+//подключение datepicker
+import './modules/datepicker/datepicker.css';
+import './modules/datepicker/datepicker.min.css';
+import './modules/datepicker/datepicker.min.js';
+import './modules/datepicker/datepicker.js';
+//---------------------------------//
 //подключение скриптов
 //import "./jquery-3.4.1.min.js";
-import "./js/formelement.js";
-import "./js/datepicker.min.js";
-import "./js/datepicker.js";
+
 //---------------------------//
 
 // Подключение картинок
