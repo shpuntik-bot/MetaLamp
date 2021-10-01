@@ -1,0 +1,115 @@
+html {
+	box-sizing: border-box;
+}
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+a {
+	text-decoration: none;
+}
+a:focus {
+	outline: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+body {
+	max-width: 1920px;
+	min-width: 320px;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+}
+ul, nav {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: #1F2041;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 23px;
+	color: #1F2041;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #1F2041;
+}
+button:active, button:focus {
+	outline: none;
+}
+.scroloff {
+	overflow: hidden;
+}
+/*------нижнее можно вынести для блоков--------*/
+/*------верхнее меню---------------------------*/
+.menu-top {
+	max-width: 780px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.menu-top__button-login {
+	margin-left: 20px;
+	margin-top: 3px;
+	width: 87px;
+	height: 34px;
+	padding: 1px;
+}
+.menu-top__button-login_input {
+	padding: 8px 19px;
+	width: 85px;
+	height: 32px;
+}
+.menu-top__button-register {
+	margin-left: 20px;
+	margin-top: 3px;
+	width: 196px;
+	height: 34px;
+	padding: 9px 20px;
+}
+/*-----------центральный блок-----------*/
+.main_blok {
+	background: url("../img/image3.jpg") center no-repeat;
+	width: 1440px;
+	margin: 0 auto;
+	padding: 70px 140px;
+	display: flex;
+	flex-direction: column;
+}
+/*------------форма поиска--------------*/
+
+/*-------------текст нижнего правого поля---*/
+.main-text {
+	width: 270px;
+	margin-top: 320px;
+	align-self: end;
+}
+
