@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/icon/favicon.ico" type="image/x-icon">
+	<title>Toxin Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="jquery-3.4.1.min.js" defer="defer"></script>
+<link rel="icon" href="favicon.ico"><script defer="defer" src="./js/main.js"></script><link href="./css/main.css" rel="stylesheet"></head>
+<body>
+<header class="header-main header-main_fon">
+	<div class="main-logo">
+		<div class="main-logo__icon"></div>
+		<div class="main-logo__text"></div>
+	</div>
+	<div class="menu-top">
+		<nav class="menu-top-nav">
+			<ul class="menu-top-nav_point">
+				<li><a class="menu-top-nav__abaut" href="#">О нас</a></li>
+				<li><a class="menu-top-nav__servic" href="#">Услуги<span class="menu-top-nav_icon"></span></a></li>
+				<li><a class="menu-top-nav__vacancy" href="#">Вакансии</a></li>
+				<li><a class="menu-top-nav__news" href="#">Новости</a></li>
+				<li><a class="menu-top-nav__agree" href="#">Соглашения<span class="menu-top-nav_icon"></span></a></li>
+			</ul>
+		</nav>
+		<div class="menu-top__button-login cklik-button"><a href="#" class="menu-top__button-login_input cklik-button_wite">ВОЙТИ</a></div>
+		<div class="menu-top__button-register cklik-button">ЗАРЕГИСТРИРОВАТЬСЯ</div>
+	</div>
+</header>
+<main class="main-blok main-blok_login">
+	<section class="registration registration_form">
+		<h1>Регистрация аккаунта</h1>
+		<div class="registration-first-name">
+			<input class="registration-first-name_input text-field_sample" name="visitor_input" placeholder="Имя" type="text">
+		</div>
+		<div class="registration-last-name">
+			<input class="registration-last-name_input text-field_sample" name="visitor_input" placeholder="Фамилия" type="text">
+		</div>
+		<div class="registration-sex">
+			<div class="registration-sex_man">
+				<input class="registration-sex_radio" type="radio" id="radio_man" name="sex" value="man" checked="checked">
+				<label for="radio_man" class="registration-sex_text">Мужчина</label>
+			</div>
+			<div class="registration-sex_woman">
+				<input class="registration-sex_radio" type="radio" id="radio_woman" name="sex" value="woman">
+				<label for="radio_woman" class="registration-sex_text">Женщина</label>
+			</div>
+		</div>
+		<div class="birthday">
+			<p class="birthday-text">Дата рождения</p>
+			<div class="form-birthday">
+				<input class="form-birthday_input text-field_sample masked-field_sample" name="birthday_input" placeholder="ДД.ММ.ГГГГ" type="text">
+			</div>
+		</div>
+		<div class="logins">
+			<p class="logins-text">Данные для входа в сервис</p>
+			<div class="form-logins">
+				<input class="form-logins_login text-field_sample" name="login_input" placeholder="Email" type="email">
+				<input class="form-logins_pasword text-field_sample" name="pasword_input" placeholder="Пароль" type="password">
+			</div>
+		</div>
+		<div class="mailing">
+			<label class="mailing-check">
+				<input class="mailing-check_input" name="mailing_input" placeholder="Получать спецпредложения" type="checkbox">
+				<span class="mailing-text">Получать спецпредложения</span>
+			</label>
+
+		</div>
+		<div class="payment-button button-arrow">
+			<p class="payment-button_result button-arrow_cklik">зарегистрироваться<span class="payment-button_result_icon button-arrow_icon"></span></p>
+		</div>
+		<div class="entry">
+			<p class="entry-text">Уже есть аккаунт на Toxin</p>
+			<div class="entryt-button cklik-button" value="ВОЙТИ"><div class="entryt-button_result cklik-button_wite">ВОЙТИ</div></div>
+		</div>
+	</section>
+</main>
+<footer class="main-footer">
+	<div class="footer-top">
+		<div class="footer-top-company">
+			<div class="main-logo">
+				<div class="main-logo__icon"></div>
+				<div class="main-logo__text"></div>
+			</div>
+			<div class="footer-top__advert">
+				<span>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</span>
+			</div>
+		</div>
+		<div class="footer-top-navi">
+			<div class="footer-top-navi__title footer-menu-title">навигация</div>
+			<div class="footer-top-navi__menu"><a href="#">О нас</a></div>
+			<div class="footer-top-navi__menu"><a href="#">Новости</a></div>
+			<div class="footer-top-navi__menu"><a href="#">Служба поддержки</a></div>
+			<div class="footer-top-navi__menu"><a href="#">Услуги</a></div>
+		</div>
+		<div class="footer-top-abaut">
+			<div class="footer-top-abaut__title footer-menu-title">о нас</div>
+			<div class="footer-top-abaut__menu"><a href="#">О сервисе</a></div>
+			<div class="footer-top-abaut__menu"><a href="#">Наша команда</a></div>
+			<div class="footer-top-abaut__menu"><a href="#">Вакансии</a></div>
+			<div class="footer-top-abaut__menu"><a href="#">Инвесторы</a></div>
+		</div>
+		<div class="footer-top-support">
+			<div class="footer-top-support__title footer-menu-title">служба поддержки</div>
+			<div class="footer-top-support__menu"><a href="#">Соглашения</a></div>
+			<div class="footer-top-support__menu"><a href="#">Сообщества</a></div>
+			<div class="footer-top-support__menu"><a href="#">Связь с нами</a></div>
+		</div>
+		<div class="footer-top-mail">
+			<div class="footer-top-mail__title footer-menu-title">подписка</div>
+			<div class="footer-top-mail__menu"><a href="#">Получайте специальные предложения и новости сервиса</a></div>
+			<form class="footer-top-mail__form">
+				<input class="footer-top-mail__input" type="email" placeholder="Email">
+				<button class="footer-top-mail__button" type="submit"></button>
+			</form>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="footer-bottom__copyr">Copyright © 2018 Toxin отель. Все права защищены.</div>
+		<div class="footer-bottom-social">
+			<div class="footer-social__twit"></div>
+			<div class="footer-social__fb"></div>
+			<div class="footer-social__inst"></div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
