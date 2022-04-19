@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/icon/favicon.ico" type="image/x-icon">
+	<title>Toxin Search Room</title>
+	<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+	<script src="jquery-3.4.1.min.js" defer="defer"></script>
+<link rel="icon" href="favicon.ico"><script defer="defer" src="./js/index.js"></script><script defer="defer" src="./js/search.js"></script><link href="./css/index.css" rel="stylesheet"><link href="./css/search.css" rel="stylesheet"></head>
+<body>
+<header class="header-main header-main_fon">
+	<div class="main-logo">
+		<div class="main-logo__icon"></div>
+		<div class="main-logo__text"></div>
+	</div>
+	<div class="menu-top">
+		<nav class="menu-top-nav">
+			<ul class="menu-top-nav_point">
+				<li><a class="menu-top-nav__abaut" href="#">О нас</a></li>
+				<li><a class="menu-top-nav__servic" href="#">Услуги<span class="menu-top-nav_icon"></span></a></li>
+				<li><a class="menu-top-nav__vacancy" href="#">Вакансии</a></li>
+				<li><a class="menu-top-nav__news" href="#">Новости</a></li>
+				<li><a class="menu-top-nav__agree" href="#">Соглашения<span class="menu-top-nav_icon"></span></a></li>
+			</ul>
+		</nav>
+		<div class="menu-top__button-login cklik-button"><a href="registration.html" class="menu-top__button-login_input cklik-button_wite">ВОЙТИ</a></div>
+		<div class="menu-top__button-register cklik-button"><a href="registration.html" class="menu-top__button-register-href">ЗАРЕГИСТРИРОВАТЬСЯ</a></div>
+	</div>
+</header>
+<main class="main-blok main_searchroom">
+	<section class="left-wrap left-wrap_props">
+		<div class="date-leve">
+			<h3>даты пребывания в отеле</h3>
+			<form class="form-date date-drop_field-props" action="#" method="post">
+				<input class="form-date_input date-drop_input-form" id="input-date" name="date_input" placeholder="ДД.МММ. - ДД.МММ." type="text">
+				<div class="form-date-button date-drop-button_props" type="submit" aria-label="ДД.ММ."></div>
+			</form>
+		</div>
+		<div class="visitor">
+			<h3>гости</h3>
+			<form class="form-visitor dropdown_field-props form-visitor_width-search" action="#" method="post">
+				<input class="form-visitor-input dropdown_input-form form-visitor-input_width-search" name="visitor_input" placeholder="Сколько гостей" type="text">
+				<div class="form-visitor-button dropdown-button_props" aria-label="Сколько гостей"></div>
+				<div class="drop-visitor drop-visitor_sample">
+					<div class="drop-visitor-big drop-expand_row">
+						<div class="drop-big-text drop-expand_row-text">взрослые</div>
+						<div class="drop-big-select drop-expand_select">
+							<div class="drop-big-select-small drop-select_small">-</div>
+							<div class="drop-big-select-result drop-select_result">0</div>
+							<div class="drop-big-select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-visitor-children drop-expand_row">
+						<div class="drop-children-text drop-expand_row-text">дети</div>
+						<div class="drop-children-select drop-expand_select">
+							<div class="drop-children-select-small drop-select_small">-</div>
+							<div class="drop-children-select-result drop-select_result">0</div>
+							<div class="drop-children-select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-visitor-babies drop-expand_row">
+						<div class="drop-babies-text drop-expand_row-text">младенцы</div>
+						<div class="drop-babies-select drop-expand_select">
+							<div class="drop-babies-select-small drop-select_small">-</div>
+							<div class="drop-babies-select-result drop-select_result">0</div>
+							<div class="drop-babies-select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-input drop-input_props">
+						<div class="drop-input-menu drop-input-menu_clear">очистить</div>
+						<div class="drop-input-menu drop-input-menu_save">применить</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="range-slider">
+			<div class="range-title">
+				<h3>диапазон цены</h3>
+				<div class="range-title-summ">
+					<div class="range-title-summ_min"></div>
+					<div class="range-title-summ_text">-</div>
+					<div class="range-title-summ_max"></div>
+				</div>
+			</div>
+			<div class="range-slider-assist">
+				<div class="container">
+					<div class="slider">
+						<div class="track"></div>
+					</div>
+					<div class="output o0"> </div>
+					<div class="thumb t0"></div>
+					<div class="output o1"> </div>
+					<div class="thumb t1"></div>
+				</div>
+			</div>
+			<div class="range-bottom-text text_slider">Стоимость за сутки пребывания в номере</div>
+		</div>
+		<div class="rule-house rule-house_props">
+			<h3>правила дома</h3>
+			<div class="check-button-block">
+				<label class="check-button_label" for="smoke">
+					<input class="check-button_input" type="checkbox" id="smoke">
+					<span class="check-button_input-text">Можно курить</span>
+				</label>
+				<label class="check-button_label" for="pet">
+					<input class="check-button_input" type="checkbox" id="pet" checked="checked">
+					<span class="check-button_input-text">Можно с питомцамир</span>
+				</label>
+				<label class="check-button_label" for="guest">
+					<input class="check-button_input" type="checkbox" id="guest" checked="checked">
+					<span class="check-button_input-text">Можно пригласить гостей (до 10 человек)</span>
+				</label>
+			</div>
+		</div>
+		<div class="access-block access-block_props">
+			<h3>доступность</h3>
+			<div class="check-button-block">
+				<label class="check-button_label check-button_label-width" for="corridor">
+					<input class="check-button_input" type="checkbox" id="corridor">
+					<span class="check-button_access-text">Широкий коридор</span>
+				</label>
+				<div class="access-text">Ширина коридоров в номере не менее 91 см.</div>
+				<label class="check-button_label check-button_label-width" for="assistant">
+					<input class="check-button_input" type="checkbox" id="assistant">
+					<span class="check-button_access-text">Помощник для инвалидов</span>
+				</label>
+				<div class="access-text">На 1 этаже вас встретит специалист  и проводит до номера.</div>
+			</div>
+		</div>
+		<div class="amenities-block amenities-bloc_props">
+			<h3>удобства номера</h3>
+			<form class="form-amenities dropdown_field-props form-amenities_width-search" action="#" method="post">
+				<input class="form-amenities-input dropdown_input-form form-amenities-input_width-search" name="amenities_input" placeholder="Удобства" type="text">
+				<div class="form-amenities-button dropdown-button_props" aria-label="Удобства"></div>
+				<div class="drop-amenities drop-amenities_sample">
+					<div class="drop-amenities-bedroom drop-expand_row">
+						<div class="drop-bedroom-text drop-expand_row-text">спальни</div>
+						<div class="drop-bedroom-select drop-expand_select">
+							<div class="drop-bedroom-select-small drop-select_small">-</div>
+							<div class="drop-bedroom-select-result drop-select_result">0</div>
+							<div class="drop-bedroom-select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-amenities-bed drop-expand_row">
+						<div class="drop-bed-text drop-expand_row-text">кровати</div>
+						<div class="drop-bed-select drop-expand_select">
+							<div class="drop-bed-select-small drop-select_small">-</div>
+							<div class="drop-bed-select-result drop-select_result">0</div>
+							<div class="drop-bed-select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-amenities-bathroom drop-expand_row">
+						<div class="drop-bathroom-text drop-expand_row-text">ванные комнаты</div>
+						<div class="drop-bathroom-select drop-expand_select">
+							<div class="drop-bathroom-select-small drop-select_small">-</div>
+							<div class="drop-bathroom-select-result drop-select_result">0</div>
+							<div class="drop-bathroom-select-more drop-select_more">+</div>
+						</div>
+					</div>
+					<div class="drop-input drop-input_props-amenities">
+						<div class="drop-input-menu drop-input-menu_clear-amenities">очистить</div>
+						<div class="drop-input-menu drop-input-menu_save-amenities">применить</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="add-amenities-block add-amenities-block_props">
+			<h3 class="add-amenities-block_text">дополнительные удобства</h3>
+			<div class="add-amenities-block-btn check-list-closed_button"></div>
+			<div class="add-amenities-block-check">
+				<label class="check-button_label check-button_label-width" for="breakfast">
+					<input class="check-button_input" type="checkbox" id="breakfast">
+					<span class="check-button_access-text">Завтрак</span>
+				</label>
+				<label class="check-button_label check-button_label-width" for="desk">
+					<input class="check-button_input" type="checkbox" id="desk">
+					<span class="check-button_access-text">Письменный стол</span>
+				</label>
+				<label class="check-button_label check-button_label-width" for="feedingchair">
+					<input class="check-button_input" type="checkbox" id="feedingchair">
+					<span class="check-button_access-text">Стул для кормления</span>
+				</label>
+				<label class="check-button_label check-button_label-width" for="crib">
+					<input class="check-button_input" type="checkbox" id="crib">
+					<span class="check-button_access-text">Кроватка</span>
+				</label>
+				<label class="check-button_label check-button_label-width" for="television1">
+					<input class="check-button_input" type="checkbox" id="television1">
+					<span class="check-button_access-text">Телевизор</span>
+				</label>
+				<label class="check-button_label check-button_label-width" for="shampoo1">
+					<input class="check-button_input" type="checkbox" id="shampoo1">
+					<span class="check-button_access-text">Шампунь</span>
+				</label>
+				<label class="check-button_label check-button_label-width" for="television2">
+					<input class="check-button_input" type="checkbox" id="television2">
+					<span class="check-button_access-text">Телевизор</span>
+				</label>
+				<label class="check-button_label check-button_label-width" for="shampoo2">
+					<input class="check-button_input" type="checkbox" id="shampoo2">
+					<span class="check-button_access-text">Шампунь</span>
+				</label>
+			</div>
+		</div>
+	</section>
+	<section class="right-wrap right-wrap_props">
+		<h1 class="">Номера, которые мы для вас подобрали</h1>
+		<div class="result-search result-search_props">
+			<article class="result-mini result-mini_props room-namber-888">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_888"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 888&nbsp<span class="result-mini-center_text-type">люкс</span></div>
+					<div class="result-mini-center_text-summ">9 990₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">145&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-840">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_840"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 840&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">9 990₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">65&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-980">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_980"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 980&nbsp<span class="result-mini-center_text-type">люкс</span></div>
+					<div class="result-mini-center_text-summ">8 500₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">35&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-856">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_856"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 856&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">7 300₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">19&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-740">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_740"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 740&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">6 000₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">44&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-982">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_982"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 982&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">5 800₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">56&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-678">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_678"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 678&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">5 500₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">45&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-450">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_450"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 450&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">5 300₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">39&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-350">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_350"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 350&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">5 000₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">77&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-666">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_666"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 666&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">5 000₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">25&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-444">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_444"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 444&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">5 000₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">15&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+			<article class="result-mini result-mini_props room-namber-352">
+				<div class="result-mini-top">
+					<div class="result-mini-top_fon result-mini-top_352"></div>
+					<div class="result-mini-top_back"></div>
+					<div class="result-mini-top_next"></div>
+					<div class="result-mini-top_slide">
+						<div class="result-mini-top_slide_focus"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+						<div class="result-mini-top_slide_other"></div>
+					</div>
+				</div>
+				<div class="result-mini-center">
+					<div class="result-mini-center_text-namber">№ 352&nbsp<span class="result-mini-center_text-type"></span></div>
+					<div class="result-mini-center_text-summ">5 000₽&nbsp<span class="result-mini-center_text-taime">в сутки</span></div>
+				</div>
+				<div class="result-mini-bottom">
+					<div class="rating-star">
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off rating-star_on">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+						<div class="rating-star_off">&#9734</div>
+					</div>
+					<div class="result-mini-bottom_comment">55&nbsp<span class="result-mini-bottom_comment-text">Отзывов</span> </div>
+				</div>
+			</article>
+		</div>
+		<div class="pagination-list">
+			<div class="pagination-href">
+				<a class="pagination-href_punkt pagination-href_punkt-active" href="#">1</a>
+				<a class="pagination-href_punkt" href="#">2</a>
+				<a class="pagination-href_punkt" href="#">3</a>
+				<a class="pagination-href_punkt pagination-href_punkt-more" href="#">...</a>
+				<a class="pagination-href_punkt" href="#">15</a>
+				<a class="pagination-href_punkt pagination-href_punkt-next" href="#"><span class="pagination-href_punkt-button"></span> </a>
+			</div>
+			<div class="pagination-list_text">1 – 12 из 100+ вариантов аренды</div>
+		</div>
+	</section>
+</main>
+<footer class="main-footer">
+	<div class="footer-top">
+		<div class="footer-top-company">
+			<div class="main-logo">
+				<div class="main-logo__icon"></div>
+				<div class="main-logo__text"></div>
+			</div>
+			<div class="footer-top__advert">
+				<span>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</span>
+			</div>
+		</div>
+		<div class="footer-top-navi">
+			<div class="footer-top-navi__title footer-menu-title">навигация</div>
+			<div class="footer-top-navi__menu"><a href="#">О нас</a></div>
+			<div class="footer-top-navi__menu"><a href="#">Новости</a></div>
+			<div class="footer-top-navi__menu"><a href="#">Служба поддержки</a></div>
+			<div class="footer-top-navi__menu"><a href="#">Услуги</a></div>
+		</div>
+		<div class="footer-top-abaut">
+			<div class="footer-top-abaut__title footer-menu-title">о нас</div>
+			<div class="footer-top-abaut__menu"><a href="#">О сервисе</a></div>
+			<div class="footer-top-abaut__menu"><a href="#">Наша команда</a></div>
+			<div class="footer-top-abaut__menu"><a href="#">Вакансии</a></div>
+			<div class="footer-top-abaut__menu"><a href="#">Инвесторы</a></div>
+		</div>
+		<div class="footer-top-support">
+			<div class="footer-top-support__title footer-menu-title">служба поддержки</div>
+			<div class="footer-top-support__menu"><a href="#">Соглашения</a></div>
+			<div class="footer-top-support__menu"><a href="#">Сообщества</a></div>
+			<div class="footer-top-support__menu"><a href="#">Связь с нами</a></div>
+		</div>
+		<div class="footer-top-mail">
+			<div class="footer-top-mail__title footer-menu-title">подписка</div>
+			<div class="footer-top-mail__menu"><a href="#">Получайте специальные предложения и новости сервиса</a></div>
+			<form class="footer-top-mail__form">
+				<input class="footer-top-mail__input" type="email" placeholder="Email">
+				<button class="footer-top-mail__button" type="submit"></button>
+			</form>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="footer-bottom__copyr">Copyright © 2018 Toxin отель. Все права защищены.</div>
+		<div class="footer-bottom-social">
+			<div class="footer-social__twit"></div>
+			<div class="footer-social__fb"></div>
+			<div class="footer-social__inst"></div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
